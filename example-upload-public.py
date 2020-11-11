@@ -1,24 +1,25 @@
 # My IAM User inline policy is:
 #
-# {
-#   "Version": "2012-10-17",
-#   "Statement": [
-#           {
-#               "Effect": "Allow",
-#               "Action": [
-#                   "s3:ListAllMyBuckets",
-#                   "s3:PutObject",
-#                   "s3:GetObject",
-#                   "s3:PutObjectAcl",
-#                   "s3:GetObjectAcl"
-#               ],
-#               "Resource": [
-#                   "arn:aws:s3:::*"
-#               ]
-#           }
-#   ]
-# }
-
+"""
+{
+  "Version": "2012-10-17",
+  "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": [
+                  "s3:ListAllMyBuckets",
+                  "s3:PutObject",
+                  "s3:GetObject",
+                  "s3:PutObjectAcl",
+                  "s3:GetObjectAcl"
+              ],
+              "Resource": [
+                  "arn:aws:s3:::*"
+              ]
+          }
+  ]
+}
+"""
 
 import boto3
 from botocore.client import Config

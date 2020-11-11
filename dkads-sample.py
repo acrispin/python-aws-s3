@@ -1,9 +1,9 @@
 import boto3
 from botocore.client import Config
 
-ACCESS_KEY_ID = 'AKIAI437F2EHPUGKRDMA'
-ACCESS_SECRET_KEY = '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'
-BUCKET_NAME = 'koilos-static-files'
+ACCESS_KEY_ID = 'AKIAJAAPSTLF7Z5VGS7Q'
+ACCESS_SECRET_KEY = '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'
+BUCKET_NAME = 'dkads-static'
 
 print('Ini')
 s3 = boto3.resource(
